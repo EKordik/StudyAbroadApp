@@ -9,8 +9,56 @@ and open the template in the editor.
         <title>Study Abroad Application</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>        
+        <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/jquery-5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Itinerary</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Calendar <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Emergency Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <h2 id="date">Thursday, February 11</h2>
+
+            <table id="daysEvent">
+                <tr><td>6:45 am</td>
+                    <td>Arrive LONDON  (Terminal 5)<br><a href="https://www.gordonramsayrestaurants.com/plane-food/">Possible Restaurant</a></td>  
+                </tr>
+                <tr><td>10:55 am</td>
+                    <td>Depart London   (Terminal 5)<br><a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airline=ba+834">FLIGHT BA 0834</a></td>  
+                </tr>
+                <tr><td>12:20 pm</td>
+                    <td>Arrival DUB Airport,  Baggage Claim<br>
+                        (Coach is expecting the group outside the terminal )<br>
+                        Hotel transfer/ check-in<br>
+                        Explore Dublin</td>  
+                </tr>
+                <tr><td>xx:xx pm</td>
+                    <td>Dinner and a show at <a href="http://www.arlington.ie/">Arlington Hotel</a><br> (including traditional Irish dance and music)</td>  
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
