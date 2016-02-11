@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="js/libs/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>  
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
-        <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/jquery-5/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
     </head>
@@ -30,7 +30,7 @@ and open the template in the editor.
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Calendar <span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Contacts</a></li>
@@ -39,11 +39,17 @@ and open the template in the editor.
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
-        <div class="container">
+        <div id="day01" class="container">
+            <h2 id="date">Mar 09 Wed</h2>
+            <table class="table table-striped">
+                <tr><td>5:10pm</td>
+                    <td>Depart Chicago ORD  (Terminal 5)<br><a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airline=ba+294">BRITISH AIRWAYS - FLIGHT BA0294</a></td></tr>
+            </table>
+        </div>
+        <div id="day02" class="container">
             <h2 id="date">Thursday, February 11</h2>
 
-            <table id="daysEvent" class="table table-striped">
+            <table class="table table-striped">
                 <tr><td class="time">6:45 am</td>
                     <td>Arrive LONDON  (Terminal 5)<br><a href="https://www.gordonramsayrestaurants.com/plane-food/">Possible Restaurant</a></td>  
                 </tr>
@@ -59,6 +65,166 @@ and open the template in the editor.
                 <tr><td class="time">xx:xx pm</td>
                     <td>Dinner and a show at <a href="http://www.arlington.ie/">Arlington Hotel</a><br> (including traditional Irish dance and music)</td>  
                 </tr>
+            </table>
+        </div>
+
+        <div id="day03" class="container">
+            <h2 id="date">Mar 10 Thr</h2>
+            <table class="table table-striped">
+                <tr><td class="time">6:45 am</td>
+                    <td>Arrive LONDON  (Terminal 5)<br><a href="https://www.gordonramsayrestaurants.com/plane-food/">Possible Restaurant</a></td>  
+                </tr>
+                <tr><td class="time">10:55 am</td>
+                    <td>Depart London   (Terminal 5)<br><a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airline=ba+834">FLIGHT BA 0834</a></td>  
+                </tr>
+                <tr><td class="time">12:20 pm</td>
+                    <td>Arrival DUB Airport,  Baggage Claim<br>
+                        (Coach is expecting the group outside the terminal )<br>
+                        Hotel transfer/ check-in<br>
+                        Explore Dublin</td>  
+                </tr>
+                <tr><td class="time">xx:xx pm</td>
+                    <td>Dinner and a show at <a href="http://www.arlington.ie/">Arlington Hotel</a><br> (including traditional Irish dance and music)</td>  
+                </tr>
+            </table>
+        </div>
+        <div id="day04" class="container">
+            <h2 id="date">Mar 11 Fri</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">8:45 am</td>
+                    <td>Tour of Dublin (details to be advised)<br>Meeting with Tourism Ireland <i>(a look at contemporary approaches to marketing Ireland including target markets and social media).</i><br>
+                        Lunch  (on own)</td></tr>
+                <tr><td>PM</td>
+                    <td><a href="https://www.guinness-storehouse.com/en">Guinness Storehouse Tour</a></td></tr>
+            </table>
+        </div>
+        <div id="day05" class="container">
+            <h2>Mar 12 Sat</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">8:00 am</td>
+                    <td>Long distance coach for transfer to BELFAST (110 miles)<br>NOTE:  travelers will need <a href="https://www.google.com/#q=dollar+to+pound+conversion">British Pounds</a> in Northern Ireland !!</td></tr>
+                <tr><td class="time">AM</td>
+                    <td>Visit of the <a href="http://www.titanicbelfast.com/">TITANIC MUSEUM</a> (opens at 10:00 am)</td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch in Belfast (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Continue to <a href="http://www.hastingshotels.com/ballygally-castle/">BALLYGALLY CASTLE (County Antrim)</a><br>
+                        Featured in <a href="http://www.gothichorrorstories.com/true-ghost-stories/ballygally-castle-hotel-the-knock-at-the-door-isnt-room-service/">True Ghost Stories</a><br><a href="http://www.oddthingsiveseen.com/2008/03/ballygally-castle-hotels-ghost-room.html">Known for the Ghost Room</a><br>Dinner (to be advised if included or not)</td></tr>
+            </table>
+        </div>
+        <div id="day06" class="container">
+            <h2 id="date">Mar 13 Sun</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">8:30 am</td>
+                    <td>Motorcoach for transfer to ENNISKILLEN  (100 miles)</td></tr>       
+                <tr><td class="time">AM</td>
+                    <td><a href="http://www.nationaltrust.org.uk/giants-causeway/">Giant’s Causeway</a><br><a href="http://www.nationaltrust.org.uk/carrick-a-rede/ ">Carick-A-Rede Bridge</a></td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Arrive <a href="http://enniskillen.com/">Enniskillen</a> late afternoon <br>Dinner (on own)</td></tr>
+            </table>
+        </div>
+        <div id="day7" class="container">
+            <h2>Mar 14 Mon</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast<br>
+                        Academic Activities at <a href="http://www.swc.ac.uk/">SouthWest College</a></td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Academic Activities at SouthWest College<br>Dinner (on own)</td></tr>
+            </table>
+        </div>
+        <div id="day08" class="container">
+            <h2 id="date">Mar 15 Tue</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast<br>
+                        Academic Activities at <a href="http://www.swc.ac.uk/">SouthWest College</a></td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Academic Activities at SouthWest College<br>Dinner (on own)</td></tr>
+            </table>
+        </div>
+        <div id="day09" class="container">
+            <h2 id="date">Mar 16 Wed</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast<br>
+                        Academic Activities at <a href="http://www.swc.ac.uk/">SouthWest College</a></td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Academic Activities at SouthWest College<br><a href="http://cromcastle.com/">  Celebration Dinner</a></td></tr>
+            </table>
+        </div>
+        <div id="day10" class="container">
+            <h2 id="date">Mar 17 Thr</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">8:00am</td>
+                    <td>Private motorcoach for day excursion to <br><a href="http://www.visitderry.com/Introduction-to-Derry-Londonderry.T220.aspx">Derry / Londonderry</a>(40 miles each way)</td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Dinner (on own)</td></tr>
+            </table>
+        </div>
+        <div id="day11" class="container">
+            <h2>Mar 18 Fri</h2>
+            <table class="table table-striped">
+                <tr><td class="time">8:00am</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">AM</td>
+                    <td>Academic Activities at SouthWest College</td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch (on own)</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Long distance coach for transfer to <a href="http://www.galwaytourism.ie/">GALWAY</a>   (145 miles)<br>Visit of the <a href="http://www.cliffsofmoher.ie/">CLIFFS of MOHER</a> OR <a href="http://www.strokestownpark.ie/famine-museum">The Irish Nat’l Famine Museum at STROKESTOWN PARK</a><br>
+                        Dinner in Galway (on own)</td></tr>
+            </table>
+        </div>
+        <div id="day12" class="container">
+            <h2 id="date">Mar 19 Sat</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast</td></tr>
+                <tr><td class="time">9:00am</td>
+                    <td>Long distance coach for transfer to Dublin    (145 miles)<br>
+                        <a href="http://www.heritageireland.ie/en/midlandseastcoast/clonmacnoise/">CLONMACNOISE</a></td></tr>
+                <tr><td class="time">Noon</td>
+                    <td>Lunch en route (on own)<br>Late afternoon arrival at Dublin Airport Hotel</td></tr>
+                <tr><td class="time">PM</td>
+                    <td>Dinner Included</td></tr>
+            </table>
+        </div>
+        <div id="day13" class="container">
+            <h2 class="date">Mar 20 Sun</h2>
+            <table class="table table-striped">
+                <tr><td class="time">AM</td>
+                    <td>Breakfast<br>
+                        Breakfast   (perhaps pre-packed breakfast)</td></tr>
+                <tr><td class="time">6:00am</td>
+                    <td>Airport transfer</td></tr>
+                <tr><td class="time">08:05am</td>
+                    <td>Depart Dublin for London Heathrow   LHR<br><a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airline=ba+833">BRITISH AIRWAYS FLIGHT BA0833</a></td></tr>
+                <tr><td class="time">9:30am</td>
+                    <td>Arrive LONDON  (Terminal 5)</td></tr>
+                <tr><td class="time">11:40am</td>
+                    <td>Depart London   (Terminal 5)<br>
+                        <a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?airline=ba+295">FLIGHT BA0295</a></td></tr>
+                <tr><td class="time">3:30pm</td>
+                    <td>Arrival Chicago O’Hare Airport  ORD</td></tr>
             </table>
         </div>
     </body>
