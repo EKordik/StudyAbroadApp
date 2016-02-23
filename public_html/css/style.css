@@ -19,3 +19,7 @@ tr .time{
 .calendar{
     display:none;
 }
+
+.showCalendar{
+    float: right;
+}
