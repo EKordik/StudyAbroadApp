@@ -11,3 +11,11 @@ h2{
 tr .time{
     width: 27%;
 }
+
+.day{
+    display:none;
+}
+
+.calendar{
+    display:none;
+}
